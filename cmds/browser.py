@@ -12,11 +12,6 @@ with open('setting.json', mode = 'r', encoding = 'utf8') as setting_file:
 
 class Browser(Cog_Extension):
     @commands.command()
-    async def mywife(self, ctx):
-        pic = setting_data['pic']
-        await ctx.send(pic)
-
-    @commands.command()
     async def h(self, ctx, key = ''):
         x = ['**指令列表**', '!!chr `<角色別稱>`  搜尋單一角色（限中文別稱）',
             '!!chr -`<類別><關鍵字>` 列出符合條件的角色清單',
@@ -212,10 +207,10 @@ def list_chr(key, cindex):
     return temp
 
 
-#大破圖搜尋
-#關鍵字列表搜尋
-#使用說明
-#圖文回覆、添加
-#外部資料連結
-#日文名
-#關鍵字異名導引
+#大破圖搜尋     V
+#關鍵字列表搜尋 V
+#使用說明       V
+#圖文回覆、添加 X
+#外部資料連結   V
+#日文名         V
+#關鍵字異名導引 X
